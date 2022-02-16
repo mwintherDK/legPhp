@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  --darkGreen: hsl(98, 56%, 28%);
+  --medGreen: hsl(98, 56%, 50%);
+  --lightGreen: hsl(98, 56%, 65%);
+  --textGrey: hsl(0, 0%, 18%);
+  --textLightGrey: hsl(0, 0%, 61%);
+}
+
+body {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Typo */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  line-height: 120%;
+}
+
+p,
+ul,
+li {
+  font-family: "Karla", sans-serif;
+  line-height: 150%;
+}
+
+/* End typo */
+
+header {
+  background: var(--darkGreen);
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav.admin ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav.admin a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+nav.admin a:hover {
+  background: var(--medGreen);
+  color: black;
+}
+
+.updateArticle,
+.updateArticle tr,
+.updateArticle td {
+  border: 1px solid var(--darkGreen);
+  border-collapse: collapse;
+  font-size: 1.4rem;
+}
+
+.updateArticle td {
+  padding: 1rem;
+}
+
+#foodplan,
+#news {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+
+#foodplan input,
+#news input {
+  padding: 1rem;
+}
+
+#foodplan button,
+#news button {
+  grid-column: 1 / span 2;
+  background: var(--darkGreen);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
