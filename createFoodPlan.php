@@ -1,5 +1,6 @@
 <?php
-    require_once "./includes/header.inc.php"; ?>
+    $al = 3;
+    require_once "./includes/adminHeader.inc.php"; ?>
 
 <form id="foodplan" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
     <label for="week">Ugedag (vælg en dag i ugen):</label>

@@ -1,4 +1,7 @@
-<?php include_once "./includes/header.inc.php"; ?>
+<?php 
+    $al = 2;
+    include_once "./includes/AdminHeader.inc.php"; 
+?>
 
 <?php if(isset($_POST['submit'])){
     $title = $_POST['title'];
